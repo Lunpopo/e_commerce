@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+		<meta charset="UTF-8">
+		<title>eStor存储集群管理系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}images/LogoIcon.png"/>
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.min.css" media="all"/>
+
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 </head>
 <body>
 <h1>fuck</h1>
+<div id="big_box">
+    <!--菜单头部内容-->
+
+    <!--菜单中间内容-->
+    <div id="content">{% block mainbody %} {% endblock %}</div>
+
+    <!--菜单底部内容-->
+</div>
 </body>
 </html>
