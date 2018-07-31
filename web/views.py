@@ -8,5 +8,4 @@ from django.shortcuts import HttpResponse
 
 
 def route(request):
-    # return HttpResponse('你大爷')
     return render(request, 'index.html')
