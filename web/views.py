@@ -9,3 +9,8 @@ from django.shortcuts import HttpResponse
 
 def route(request):
     return render(request, 'index.html')
+
+
+def industry_solution(request):
+    return render(request, 'industry_solutions.html')
+
