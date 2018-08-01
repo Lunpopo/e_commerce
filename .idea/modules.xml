@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Walkline/.idea/WalkLine.iml" filepath="$USER_HOME$/Walkline/.idea/WalkLine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/e_commerce.iml" filepath="$PROJECT_DIR$/.idea/e_commerce.iml" />
-      <module fileurl="file://$USER_HOME$/estorUI/.idea/estorUI.iml" filepath="$USER_HOME$/estorUI/.idea/estorUI.iml" />
     </modules>
   </component>
 </project>
