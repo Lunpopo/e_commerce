@@ -1,5 +1,12 @@
 # Django settings for e_commerce project.
 import os
+from django.conf.urls import handler404, handler500
+
+# handler404 = "web.views.page_not_found"
+# handler500 = "web.views.page_error"
+
+
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -172,3 +179,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'template').replace('\\', '/'),
 )
+
+
+# allow all requests
+ALLOWED_HOSTS = ['*']
