@@ -27,14 +27,31 @@
             margin-top: 10px;
         }
 
-        <!-- 小标题被点击之后的颜色 -->
+        /* 小标题被点击之后的颜色 */
         .small_title_active {
             color: #0e90d2 !important;
         }
 
-        <!-- 小标题的a标签悬浮的样式 -->
+        /* 小标题的a标签悬浮的样式 */
         .am-accordion-content:hover {
             color: #ccc;
+        }
+
+        /* navigate menu style */
+        /* 转成手形图标 */
+        .leftMenu .panel-heading {
+            font-size: 14px;
+            padding-left: 20px;
+            height: 36px;
+            line-height: 36px;
+            color: white;
+            position: relative;
+{#            cursor: pointer;#}
+        }
+        .leftMenu .panel-heading span {
+            position: absolute;
+            right: 10px;
+            top: 12px;
         }
     </style>
 
@@ -56,201 +73,140 @@
     </div>
 
     <!-- 内容盒子 -->
-    <div class="am-container m-home-box" style="max-width: 1200px;">
-        <!-- 侧边栏小导航条 -->
-        <div style="margin: 0;" data-am-widget="accordion" class="col-lg-3 col-xs-12 am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
-            <div class="am-accordion-item am-active">
-                <div class="am-accordion-title">
-                    行业解决方案
-                </div>
-                <div class="am-accordion-bd am-collapse am-in">
-                    <div class="small_title"><a href="#" class="am-accordion-content">塑胶行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">硅橡胶行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">五金工具包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">电子元器件行业包装袋</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">礼品/工艺品/饰品行业包装袋</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">照明工业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">化妆品行业解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">家居用品行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">家用电器行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">通讯用品行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">仪器仪表行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">办公/文教行业解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">纺织/皮革行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">汽摩及配件包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">超市/百货行业包装袋解决方案</a></div>
-                    <div class="small_title"><a href="#" class="am-accordion-content">酒店服务行业包装袋解决方案</a></div>
-                </div>
-            </div>
-            <div class="am-accordion-item">
-                <div class="am-accordion-title">
-                    服装服饰包装供应
-                </div>
-                <div class="am-accordion-bd am-collapse ">
-                    <div class="am-accordion-content">
-                        走在忠孝东路能打多少十大 <br/> 徘徊在茫然中 <br/> 在我的人生旅途 <br/> 选择了多少错误 <br/> 我在睡梦中惊醒 <br/> 感叹悔言无尽 <br/> 恨我不能说服自己 <br/> 接受一切教训 <br/> 让生命去等候 <br/> 等候下一个漂流 <br/> 让生命去等候 <br/>等候下一个伤口
+    <div class="container" style="max-width: 1200px;">
+        <div class="row">
+            <!-- 侧边栏小导航条 -->
+            <div class="col-lg-2" style="padding: 0; margin: 0;">
+                <!-- panel group is 手风琴 equal to 折叠框 -->
+                <div class="panel-group table-responsive" role="tablist">
+                    <!-- panel 1 -->
+                    <div class="panel panel-primary leftMenu" style="padding: 0; margin-top: 0; margin-left: 0;">
+                        <!-- 利用data-target指定要折叠的分组列表 -->
+                        <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup1" role="tab" >
+                            <h4 class="panel-title">
+                                分组1
+                                <span class="glyphicon glyphicon-chevron-up right"></span>
+                            </h4>
+                        </div>
+                        <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                        <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">分组项1-1</a>
+                                </li>
+                                <li class="list-group-item">
+                                    分组项1-2
+                                </li>
+                                <li class="list-group-item">
+                                    分组项1-3
+                                </li>
+                                <li class="list-group-item">
+                                    分组项1-4
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="am-accordion-item">
-                <div class="am-accordion-title">
-                    胶带自动报价系统
-                </div>
-                <div class="am-accordion-bd am-collapse ">
-                    <div class="am-accordion-content">
-                        我就这样告别山下的家，我实在不愿轻易让眼泪留下。我以为我并不差不会害怕，我就这样自己照顾自己长大。我不想因为现实把头低下，我以为我并不差能学会虚假。怎样才能够看穿面具里的谎话？别让我的真心散的像沙。如果有一天我变得更复杂，还能不能唱出歌声里的那幅画？
-                    </div>
-                </div>
-            </div>
-            <div class="am-accordion-item">
-                <div class="am-accordion-title">
-                    专业服务
-                </div>
-                <div class="am-accordion-bd am-collapse ">
-                    <div class="am-accordion-content">
-                        我就这样告别山下的家，我实在不愿轻易让眼泪留下。我以为我并不差不会害怕，我就这样自己照顾自己长大。我不想因为现实把头低下，我以为我并不差能学会虚假。怎样才能够看穿面具里的谎话？别让我的真心散的像沙。如果有一天我变得更复杂，还能不能唱出歌声里的那幅画？
-                    </div>
-                </div>
-            </div>
-            <div class="am-accordion-item">
-                <div class="am-accordion-title">
-                    关于吉福永
-                </div>
-                <div class="am-accordion-bd am-collapse ">
-                    <div class="am-accordion-content">
-                        我就这样告别山下的家，我实在不愿轻易让眼泪留下。我以为我并不差不会害怕，我就这样自己照顾自己长大。我不想因为现实把头低下，我以为我并不差能学会虚假。怎样才能够看穿面具里的谎话？别让我的真心散的像沙。如果有一天我变得更复杂，还能不能唱出歌声里的那幅画？
-                    </div>
-                </div>
-            </div>
-            <div class="am-accordion-item">
-                <div class="am-accordion-title">
-                    环境设备
-                </div>
-                <div class="am-accordion-bd am-collapse ">
-                    <div class="am-accordion-content">
-                        我就这样告别山下的家，我实在不愿轻易让眼泪留下。我以为我并不差不会害怕，我就这样自己照顾自己长大。我不想因为现实把头低下，我以为我并不差能学会虚假。怎样才能够看穿面具里的谎话？别让我的真心散的像沙。如果有一天我变得更复杂，还能不能唱出歌声里的那幅画？
-                    </div>
-                </div>
-            </div>
-            <div class="am-accordion-item">
-                <div class="am-accordion-title">
-                    名师介绍
-                </div>
-                <div class="am-accordion-bd am-collapse ">
-                    <div class="am-accordion-content">
-                        我就这样告别山下的家，我实在不愿轻易让眼泪留下。我以为我并不差不会害怕，我就这样自己照顾自己长大。我不想因为现实把头低下，我以为我并不差能学会虚假。怎样才能够看穿面具里的谎话？别让我的真心散的像沙。如果有一天我变得更复杂，还能不能唱出歌声里的那幅画？
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <!--panel 1 end-->
 
+                    <!-- panel 2 -->
+                    <div class="panel panel-primary leftMenu" style="padding: 0; margin-top: 0; margin-left: 0;">
+                        <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
+                            <h4 class="panel-title">
+                                分组2
+                                <span class="glyphicon glyphicon-chevron-down right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <span>2-2</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>2-2</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>2-3</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- penel 2 end -->
+                </div>
+            </div>
 
-{#        <div style="margin: 0;" data-am-widget="accordion" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>#}
-{#            <div class="am-accordion-item am-active am-disabled">#}
-{#                <div class="am-accordion-title">#}
-{#                    行业解决方案#}
-{#                </div>#}
-{#                <div class="am-accordion-bd am-collapse am-in">#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content small_title_active" style="text-decoration: none">塑胶行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">硅橡胶行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">五金工具包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">电子元器件行业包装袋</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">礼品/工艺品/饰品行业包装袋</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">照明工业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">化妆品行业解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">家居用品行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">家用电器行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">通讯用品行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">仪器仪表行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">办公/文教行业解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">纺织/皮革行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">汽摩及配件包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">超市/百货行业包装袋解决方案</a></div>#}
-{#                    <div class="small_title"><a href="#" class="am-accordion-content" style="text-decoration: none;">酒店服务行业包装袋解决方案</a></div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="am-accordion-item am-active am-disabled">#}
-{#                <div class="am-accordion-title">#}
-{#                    相关资讯#}
-{#                </div>#}
-{#                <div class="am-accordion-bd am-collapse am-in">#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="您习惯重复使用超市背心袋吗？"><a href="#" class="am-accordion-content" style="text-decoration: none;">您习惯重复使用超市背心袋吗？</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="袜子通常用什么材料的包装胶袋？"><a href="#" class="am-accordion-content" style="text-decoration: none;">袜子通常用什么材料的包装胶袋？</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="[深圳包装袋厂]环保对于我们任何一个人来说都是必要的"><a href="#" class="am-accordion-content" style="text-decoration: none;">[深圳包装袋厂]环保对于我们任何一个人来说都是必要的</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="[包装材料厂]引领包装新趋势需要包装材料厂的支持"><a href="#" class="am-accordion-content" style="text-decoration: none;">[包装材料厂]引领包装新趋势需要包装材料厂的支持</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="专利证书"><a href="#" class="am-accordion-content" style="text-decoration: none;">专利证书</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="[塑料袋厂]塑料袋是否有毒你知道如何辨别吗？"><a href="#" class="am-accordion-content" style="text-decoration: none;">[塑料袋厂]塑料袋是否有毒你知道如何辨别吗？</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="什么样的包装材料才是安全的呢？"><a href="#" class="am-accordion-content" style="text-decoration: none;">什么样的包装材料才是安全的呢？</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="如何让自己的产品被买家搜到？"><a href="#" class="am-accordion-content" style="text-decoration: none;">如何让自己的产品被买家搜到？</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="[PP袋]欣昌盛包装是最有名的包装公司"><a href="#" class="am-accordion-content" style="text-decoration: none;">[PP袋]欣昌盛包装是最有名的包装公司</a></div>#}
-{#                    <div class="small_title" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="欣昌盛胶袋厂O2O商家首选合作伙伴"><a href="#" class="am-accordion-content" style="text-decoration: none;">欣昌盛胶袋厂O2O商家首选合作伙伴</a></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-
-        <!-- 右边内容大板块 -->
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="height: 1000px; border: 1px solid skyblue; float: right; position: relative; padding: 0;">
-            <!-- 显示当前位置和解决方案的介绍 -->
-            <div style="height: 300px; width: 100%;">
-                <!-- 显示当前位置 -->
-                <p style="background: #dadada; width: 100%; height: 50px; line-height: 50px; padding-left: 20px; border-bottom: 1px solid gray; margin-bottom: 0"><span style="color: black; font-weight: bold;">当前位置：</span><a href="#" style="color: black;">首页</a> » <a href="#" style="color: black;">行业解决方案</a> » <a href="#" style="color: black;">塑胶行业包装袋解决方案</a></p>
-                <!-- 图片和介绍组成的框 -->
+            <!-- 右边内容大板块 -->
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="height: 1000px; padding: 0;">
+                <!-- 显示当前位置和解决方案的介绍 -->
                 <div>
-                    <div class="col-lg-3" style=" float: left; margin-top: 5px; border: 1px solid black;"><img src="{{ STATIC_URL }}images/industry_solutions/container_1.jpg" alt="" style="width: 100%;"></div>
+                    <!-- 显示当前位置 -->
+                    <p style="background: #dadada; height: 50px; line-height: 50px; padding-left: 20px; border-bottom: 1px solid gray; margin-bottom: 0"><span style="color: black; font-weight: bold;">当前位置：</span><a href="#" style="color: black;">首页</a> » <a href="#" style="color: black;">行业解决方案</a> » <a href="#" style="color: black;">塑胶行业包装袋解决方案</a></p>
 
-                    <div class="col-lg-9" style="float: right; margin-top: 5px;">
-                        <h2>塑胶行业包装袋解决方案</h2>
-                        <p>深圳市欣昌盛包装制品有限公司是一家致力于工业用包装胶袋,食品包装胶袋研发、生产与销售的专业公司。成立于2002年，位于广东省深圳市坪山新区，东北临惠州市惠阳区,南邻龙岗区葵涌镇地理位置优越越、交通便利，专业为塑胶提供包装袋解决方案。</p>
+                    <!-- 图片和介绍组成的框 -->
+                    <div>
+                        <div class="col-lg-3" style="margin-top: 5px; margin-bottom: 50px; border: 1px solid black;"><img src="{{ STATIC_URL }}images/industry_solutions/container_1.jpg" alt="" style="width: 100%;"></div>
+
+                        <div class="col-lg-9" style="margin-top: 5px;">
+                            <h2>塑胶行业包装袋解决方案</h2>
+                            <p style="margin-bottom: 50px;">
+                                深圳市欣昌盛包装制品有限公司是一家致力于工业用包装胶袋,食品包装胶袋研发、生产与销售的专业公司。成立于2002年，位于广东省深圳市坪山新区，东北临惠州市惠阳区,南邻龙岗区葵涌镇地理位置优越越、交通便利，专业为塑胶提供包装袋解决方案。
+                                深圳市欣昌盛包装制品有限公司是一家致力于工业用包装胶袋,食品包装胶袋研发、生产与销售的专业公司。成立于2002年，位于广东省深圳市坪山新区，东北临惠州市惠阳区,南邻龙岗区葵涌镇地理位置优越越、交通便利，专业为塑胶提供包装袋解决方案。
+                                深圳市欣昌盛包装制品有限公司是一家致力于工业用包装胶袋,食品包装胶袋研发、生产与销售的专业公司。成立于2002年，位于广东省深圳市坪山新区，东北临惠州市惠阳区,南邻龙岗区葵涌镇地理位置优越越、交通便利，专业为塑胶提供包装袋解决方案。
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 当前方案的案例 -->
-            <div style="width: 100%; height: 500px;">
-                <!-- 当前方案案例抬头 -->
-                <div style="background: #dadada; width: 100%; height: 50px; line-height: 50px; padding-left: 20px; border-bottom: 1px solid gray; margin-bottom: 0">
-                    <p style="float: left;">当前方案的案例</p>
-                    <a href="#" style="color: black; float: right; padding-right: 20px;">[方案中心]</a>
+                <!-- 当前方案的案例 -->
+                <div style="width: 100%; height: 500px; clear: both;">
+                    <!-- 当前方案案例抬头 -->
+                    <div style="background: #dadada; height: 50px; line-height: 50px; padding-left: 20px; border-bottom: 1px solid gray; margin-bottom: 0">
+                        <p style="float: left;">当前方案的案例</p>
+                        <a href="#" style="color: black; float: right; padding-right: 20px;">[方案中心]</a>
+                    </div>
+
+                    <!-- 当前方案内容，4个盒子 -->
+                    <div class="container col-lg-12" style="margin: 0; padding: 0;">
+                        <div class="col-lg-3">
+                            <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_1.jpg" alt="" style="width: 100%;">
+                            <p style="margin: 5px 0;"><a href="#">光身自封袋/密封袋</a></p>
+                            <p style="margin: 5px 0; font-size: 14px;">PE料制成，厚度3C，加厚的是5C(部分规格有加厚的),适用于装电子零配件、珠宝、服装、说明书等，防水</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_2.jpg" alt="" style="width: 100%;">
+                            <p style="margin: 5px 0;"><a href="#">药片自封袋/拉链袋</a></p>
+                            <p style="margin: 5px 0; font-size: 14px;">PE料制成，厚度3C，加厚的是5C(部分规格有加厚的),适用于装电子零配件、珠宝、服装、说明书等，防水</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_3.jpg" alt="" style="width: 100%;">
+                            <p style="margin: 5px 0;"><a href="#">有色自封袋/密实袋/骨袋</a></p>
+                            <p style="margin: 5px 0; font-size: 14px;">自封袋（又称为密实袋，由任袋，密封袋，夹链袋，骨袋，英文：Ziplock bags，Reclosable Bag, Zipper</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_4.jpg" alt="" style="width: 100%;">
+                            <p style="margin: 5px 0;"><a href="#">骨袋封口袋</a></p>
+                            <p style="margin: 5px 0; font-size: 14px;">骨口袋：骨袋——PE全新料骨袋，密封性卓越、耐酸碱、无毒。作用：防尘、防潮、防掉漏。应用范围：五金、首饰、电子、药材、超市、零食店、茶叶、文具、玩具、印刷、皮具等。用骨[了解详情]</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- 当前方案内容，4个盒子 -->
-                <div class="col-lg-12">
-                    <div class="col-lg-3">
-                        <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_1.jpg" alt="" style="width: 100%;">
-                        <p style="margin: 5px 0;"><a href="#">光身自封袋/密封袋</a></p>
-                        <p style="margin: 5px 0; font-size: 14px;">PE料制成，厚度3C，加厚的是5C(部分规格有加厚的),适用于装电子零配件、珠宝、服装、说明书等，防水</p>
+                <!-- 欣昌盛资讯 -->
+                <!-- 欣昌盛资讯 -->
+                <div class="col-lg-12 container">
+                    <!-- 当前方案案例抬头 -->
+                    <div style="background: #dadada; width: 100%; height: 50px; line-height: 50px; padding-left: 20px; border-bottom: 1px solid gray; margin-bottom: 0">
+                        吉福永咨询
                     </div>
-                    <div class="col-lg-3">
-                        <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_2.jpg" alt="" style="width: 100%;">
-                        <p style="margin: 5px 0;"><a href="#">药片自封袋/拉链袋</a></p>
-                        <p style="margin: 5px 0; font-size: 14px;">PE料制成，厚度3C，加厚的是5C(部分规格有加厚的),适用于装电子零配件、珠宝、服装、说明书等，防水</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_3.jpg" alt="" style="width: 100%;">
-                        <p style="margin: 5px 0;"><a href="#">有色自封袋/密实袋/骨袋</a></p>
-                        <p style="margin: 5px 0; font-size: 14px;">自封袋（又称为密实袋，由任袋，密封袋，夹链袋，骨袋，英文：Ziplock bags，Reclosable Bag, Zipper</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="{{ STATIC_URL }}images/industry_solutions/sujiao_container_4.jpg" alt="" style="width: 100%;">
-                        <p style="margin: 5px 0;"><a href="#">骨袋封口袋</a></p>
-                        <p style="margin: 5px 0; font-size: 14px;">骨口袋：骨袋——PE全新料骨袋，密封性卓越、耐酸碱、无毒。作用：防尘、防潮、防掉漏。应用范围：五金、首饰、电子、药材、超市、零食店、茶叶、文具、玩具、印刷、皮具等。用骨[了解详情]</p>
+
+                    <!-- 当前方案内容，4个盒子 -->
+                    <div style="clear: both;">
+                        <!-- left information -->
+                        <div class="col-lg-6" style="height: 400px; background: black;"></div>
+                        <!-- right information -->
+                        <div class="col-lg-6" style="height: 400px; background: pink;"></div>
                     </div>
                 </div>
-            </div>
-
-            <!-- 欣昌盛资讯 -->
-            <!-- 欣昌盛资讯 -->
-            <div>
-                <!-- 当前方案案例抬头 -->
-                <div style="background: #dadada; width: 100%; height: 50px; line-height: 50px; padding-left: 20px; border-bottom: 1px solid gray; margin-bottom: 0">
-                    <p style="float: left;">当前方案的案例</p>
-                    <a href="#" style="color: black; float: right; padding-right: 20px;">[方案中心]</a>
-                </div>
-
-                <!-- 当前方案内容，4个盒子 -->
             </div>
         </div>
-
     </div>
 
 {#    javascript#}
@@ -263,6 +219,15 @@
                 title_li.eq(i).attr('class', '');
             }
             title_li.eq(1).attr('class', 'active');
+
+
+
+
+            $(".panel-heading").click(function(e){
+                /*切换折叠指示图标*/
+                $(this).find("span").toggleClass("glyphicon-chevron-down");
+                $(this).find("span").toggleClass("glyphicon-chevron-up");
+            });
         });
 
         //swiper 插件
